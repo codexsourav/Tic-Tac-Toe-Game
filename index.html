@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="winnerbord">
+        <div class="winner">
+            <img src="images/win.png" alt="win">
+            <h1 id="winnername">X IS Winner</h1>
+            <input type="submit" class="resetbtn" value="Reset Game" onclick="resetgame()">
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="plyerplay">
+            <p>Player Turn
+            <p>
+                <img src="images/x.png" height="30px" id="showturn">
+        </div>
+
+
+
+        <div class="bord">
+            <!-- <img src="images/x.png" width="60px" /> -->
+            <button class="box" id="box0" onclick="setboxclick('#box0')"></button>
+            <button class="box" id="box1" onclick="setboxclick('#box1')"></button>
+            <button class="box" id="box2" onclick="setboxclick('#box2')"></button>
+            <button class="box" id="box3" onclick="setboxclick('#box3')"></button>
+            <button class="box" id="box4" onclick="setboxclick('#box4')"></button>
+            <button class="box" id="box5" onclick="setboxclick('#box5')"></button>
+            <button class="box" id="box6" onclick="setboxclick('#box6')"></button>
+            <button class="box" id="box7" onclick="setboxclick('#box7')"></button>
+            <button class="box" id="box8" onclick="setboxclick('#box8')"></button>
+        </div>
+
+
+        <input type="submit" class="resetbtn" value="Reset Game" onclick="resetgame()">
+    </div>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
